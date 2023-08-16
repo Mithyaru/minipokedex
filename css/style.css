@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Concert+One&family=Poppins:wght@300;500;800&display=swap');
+
+:root{
+    --cor-principal: #2C3639;
+    --cor-texto: #DCD7C9;
+    --cor-secundaria: #3F4E4F;
+    --cor-terciaria: #B73E3E;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    color: var(--cor-texto);
+    background-color: var(--cor-principal);
+}
+
+header {
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.logo {
+    width: 30px;
+    transition: 0.2s ease;
+}
+
+.logo:hover,
+.imagem-botao:hover,
+.cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+
+}
+
+.listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 1%;
+}
+
+.cartao-pokemon {
+    background-color: var(--cor-secundaria);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.cartao-pokemon:hover {
+    background-color: #4c5c5e;
+    box-shadow: 0 1px 15px var(--cor-terciaria);
+
+
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+} 
+
+
+.gif {
+    width: 70px;
+    height: 70px;
+}
+
+.tipos {
+    display: flex;
+    gap: 15px;
+}
+
+.tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama {
+    background-color: #75ee2e;
+}
+
+.veneno {
+    background-color: #e05adefb;
+
+}
+
+.fogo {
+    background-color: #ee8130
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+.voador {
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+
+.descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
